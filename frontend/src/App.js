@@ -1,56 +1,57 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { Toaster } from "@/components/ui/sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+import { Header } from "@/components/noxn/Header";
+import { Hero } from "@/components/noxn/Hero";
+import { Services } from "@/components/noxn/Services";
+import { Process } from "@/components/noxn/Process";
+import { Pricing } from "@/components/noxn/Pricing";
+import { Faq } from "@/components/noxn/Faq";
+import { Footer } from "@/components/noxn/Footer";
+import { AssessmentForm } from "@/components/noxn/AssessmentForm";
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+const Landing = () => {
+    const [open, setOpen] = useState(false);
+    const onBegin = () => setOpen(true);
 
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App font-body">
+            <Header onBegin={onBegin} />
+            <main>
+                <Hero onBegin={onBegin} />
+                <Services onBegin={onBegin} />
+                <Process />
+                <Pricing onBegin={onBegin} />
+                <Faq />
+            </main>
+            <Footer onBegin={onBegin} />
+            <AssessmentForm open={open} onOpenChange={setOpen} />
+            <Toaster
+                theme="dark"
+                position="bottom-right"
+                toastOptions={{
+                    style: {
+                        background: "#0B132B",
+                        color: "#fff",
+                        border: "1px solid rgba(255,90,0,0.4)",
+                        borderRadius: 0,
+                    },
+                }}
+            />
+        </div>
+    );
 };
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Landing />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
