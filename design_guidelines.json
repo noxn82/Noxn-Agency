@@ -1,0 +1,115 @@
+{
+  "project_name": "NOXN Landing Page",
+  "theme": "Dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) + Tech-Forward Hybrid",
+  "emotion_and_tone": "Modern, innovative, undiscovered, high-impact, bold, kinetic.",
+  "colors": {
+    "background_primary": "#050B14",
+    "background_secondary": "#0B132B",
+    "primary_accent": "#FF5A00",
+    "primary_accent_hover": "#E65200",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#94A3B8",
+    "border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk, Space Grotesk, or Clash Display",
+    "body_font": "Manrope or Inter",
+    "rules": [
+      "Headings MUST use tight letter spacing (tracking-tighter) and font-black for maximum impact.",
+      "Body text should be highly legible, using text-slate-400 (text_secondary).",
+      "Do NOT exceed text-6xl for the main hero heading."
+    ]
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy",
+    "grid_strategy": "MODE A: The 'Tetris' Grid for Services section. Aggressive asymmetry.",
+    "container_padding": "p-8 to p-12 minimum for cards with borders."
+  },
+  "components": {
+    "buttons": "Sharp corners (rounded-none or rounded-sm). Primary CTA is bright orange with white text. Hover states MUST have higher contrast.",
+    "cards": "1px solid border (border_subtle), flat dark navy background. Slight lift (-translate-y-1) on hover.",
+    "accordion": "Use Shadcn accordion for FAQ. Minimalist styling, border-b only, no cards.",
+    "form": "Multi-step assessment form. Sleek glassmorphism or terminal-like inputs. Never use native inputs without Shadcn wrappers."
+  },
+  "motion_interactions": {
+    "rules": [
+      "Smooth entrance animations for grid items (staggered).",
+      "Hover states on all interactive elements.",
+      "Focus states MUST have an electric orange ring (focus:ring-[#FF5A00])."
+    ]
+  },
+  "pages_and_sections": [
+    {
+      "name": "Header",
+      "guidelines": "Sticky header with glassmorphism (backdrop-blur-xl bg-[#050B14]/70). Logo NOXN in font-black text-2xl. Primary CTA 'Let's begin' matching the form intent."
+    },
+    {
+      "name": "Hero Section",
+      "guidelines": "Massive typography. Background image (hero_billboard) with bg-[#050B14]/60 overlay. Tagline should be bold. CTA 'Let's begin' prominent."
+    },
+    {
+      "name": "Services Section",
+      "guidelines": "Bento Grid (Mode A). Showcasing 'Digital Billboard Ad Creation' and 'Billboard Ad Space Booking'. Use LED Texture image as background for one of the bento boxes."
+    },
+    {
+      "name": "How it works (Process)",
+      "guidelines": "Step-by-step layout. Large numbers (e.g., 01, 02) in text_secondary with low opacity. Kinetic background image used subtly."
+    },
+    {
+      "name": "Pricing / Packages",
+      "guidelines": "High-conversion cards. Tracing beam border effect or simple glowing border for the recommended package."
+    },
+    {
+      "name": "FAQ",
+      "guidelines": "Clean accordion layout. Left-aligned text."
+    },
+    {
+      "name": "Assessment Form Section / Modal",
+      "guidelines": "Multi-step form (campaign goal, budget, timing, location, business info). Header microcopy: 'Let's start prepping your campaign'. Clean progress indicator."
+    },
+    {
+      "name": "Footer",
+      "guidelines": "Massive space (py-24 or py-32). Massive 'NOXN' logo at text-[10vw]."
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/7a9b6db3-da51-486d-b381-a72900b8fc1d/images/c371a76cb25fe848c920302f5418d709b49227e19714e164af48f76fb7e33779.png",
+        "description": "Massive futuristic digital billboard glowing intensely in electric orange against a deep navy blue night sky",
+        "category": "hero_background"
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/7a9b6db3-da51-486d-b381-a72900b8fc1d/images/81bba1a5347dacd6a59923d5712c95bde5d01ad7b7146a76d238b3bc90a17d22.png",
+        "description": "Abstract tech-forward background, kinetic streaks of neon orange light",
+        "category": "section_background_process_or_form"
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/7a9b6db3-da51-486d-b381-a72900b8fc1d/images/19ea8d617b2e136a2c645cfe754236ae11eb7d5869067c113834236e2308726f.png",
+        "description": "LED digital display panel texture showing bright orange pixels",
+        "category": "service_card_ad_creation"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1760042001943-8be600eb252f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjaXR5c2NhcGUlMjBuaWdodCUyMG5lb24lMjBvcmFuZ2V8ZW58MHx8fHwxNzgwMjIzNTk5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "City buildings with large neon signs at night",
+        "category": "service_card_ad_space"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5920774/pexels-photo-5920774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Smiling young ethnic male waiter near modern food truck",
+        "category": "target_audience_business_owner"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "ALL interactive elements and key text MUST have a data-testid attribute.",
+    "Use pure HTML and Tailwind for marketing page structures. Avoid generic Shadcn 'Cards' that restrict bento grid fluidity.",
+    "Use Phosphor Icons (@phosphor-icons/react) for tech-forward iconography.",
+    "Implement the assessment form using Shadcn inputs and logic, styled heavily to fit the Dark Navy/Orange aesthetic.",
+    "Do NOT use 'Inter' for headings. Use a sharp Grotesk like 'Space Grotesk' or install 'Cabinet Grotesk'/'Clash Display'.",
+    "Ensure Lenis is used for smooth scrolling.",
+    "Do not add any AI-related features or text.",
+    "Use React Hook Form + Zod for the multi-step assessment form."
+  ]
+}
