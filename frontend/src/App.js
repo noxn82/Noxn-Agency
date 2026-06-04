@@ -33,7 +33,7 @@ const Landing = () => {
                 position="bottom-right"
                 toastOptions={{
                     style: {
-                        background: "#0B132B",
+                        background: "#142446",
                         color: "#fff",
                         border: "1px solid rgba(255,90,0,0.4)",
                         borderRadius: 0,

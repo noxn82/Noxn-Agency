@@ -7,24 +7,24 @@
 @layer base {
     :root {
         /* NOXN dark theme tokens (shadcn HSL) */
-        --background: 213 67% 5%;          /* #050B14 */
+        --background: 216 60% 10%;         /* #0A1628 */
         --foreground: 0 0% 100%;
-        --card: 220 51% 11%;               /* #0B132B */
+        --card: 221 55% 18%;               /* #142446 */
         --card-foreground: 0 0% 100%;
-        --popover: 220 51% 11%;
+        --popover: 221 55% 18%;
         --popover-foreground: 0 0% 100%;
         --primary: 21 100% 50%;            /* #FF5A00 */
         --primary-foreground: 0 0% 100%;
-        --secondary: 220 51% 14%;
+        --secondary: 221 50% 20%;
         --secondary-foreground: 0 0% 100%;
-        --muted: 220 30% 16%;
-        --muted-foreground: 215 20% 65%;
+        --muted: 221 40% 22%;
+        --muted-foreground: 215 25% 70%;
         --accent: 21 100% 50%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 100%;
-        --border: 220 30% 18%;
-        --input: 220 30% 16%;
+        --border: 221 35% 24%;
+        --input: 221 40% 22%;
         --ring: 21 100% 50%;
         --radius: 0.125rem;
     }
@@ -35,14 +35,14 @@
     html { scroll-behavior: smooth; }
     body {
         margin: 0;
-        background-color: #050B14;
+        background-color: #0A1628;
         color: #FFFFFF;
         font-family: 'Manrope', system-ui, -apple-system, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-feature-settings: "ss01", "cv11";
     }
-    ::selection { background: #FF5A00; color: #050B14; }
+    ::selection { background: #FF5A00; color: #0A1628; }
 }
 
 @layer utilities {

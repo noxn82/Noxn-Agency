@@ -12,7 +12,7 @@ export const Footer = ({ onBegin }) => {
                     <div className="lg:col-span-7">
                         <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-[#FF5A00] mb-6 flex items-center gap-3">
                             <span className="inline-block w-6 h-px bg-[#FF5A00]" />
-                            06 — Ready when you are
+                            06 / Ready when you are
                         </div>
                         <h3 className="font-display font-black tracking-tighter text-white text-4xl sm:text-5xl lg:text-6xl leading-[0.95]">
                             Let's start prepping<br />
@@ -27,7 +27,7 @@ export const Footer = ({ onBegin }) => {
                             data-testid="footer-cta-begin"
                             className="mt-10 inline-flex items-center gap-3 bg-[#FF5A00] hover:bg-[#E65200] text-white px-8 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-300 border-glow-orange"
                         >
-                            Let's begin
+                            Put me on a billboard
                             <span aria-hidden>→</span>
                         </button>
                     </div>

@@ -24,7 +24,7 @@ export const Hero = ({ onBegin }) => {
                     className="w-full h-full object-cover opacity-70"
                     loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050B14]/40 via-[#050B14]/70 to-[#050B14]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628]/40 via-[#0A1628]/70 to-[#0A1628]" />
                 <div className="absolute inset-0 grid-noise opacity-40" />
                 <div className="absolute inset-0 scanlines opacity-30 mix-blend-overlay" />
             </div>
@@ -43,17 +43,16 @@ export const Hero = ({ onBegin }) => {
                     {...fadeUp(0.08)}
                     className="font-display font-black tracking-tighter text-white text-5xl sm:text-6xl lg:text-[6rem] leading-[0.92]"
                 >
-                    Your message,<br />
-                    <span className="text-[#FF5A00] text-glow-orange">towering</span> over the city.
+                    Own the <span className="text-[#FF5A00] text-glow-orange">Streets</span>.<br />
+                    Own the <span className="text-[#FF5A00] text-glow-orange">Market</span>.
                 </motion.h1>
 
                 <motion.p
                     {...fadeUp(0.2)}
                     data-testid={NOXN.heroSubcopy}
-                    className="mt-10 max-w-2xl text-base sm:text-lg text-slate-400 leading-relaxed"
+                    className="mt-10 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed"
                 >
-                    NOXN is a digital billboard studio for founders, small businesses and product launches.
-                    We design the ad. We secure the screen. You light up the skyline.
+                    Because waiting to be discovered is not a marketing strategy.
                 </motion.p>
 
                 <motion.div {...fadeUp(0.32)} className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -62,7 +61,7 @@ export const Hero = ({ onBegin }) => {
                         data-testid={NOXN.heroCtaPrimary}
                         className="group relative inline-flex items-center gap-3 bg-[#FF5A00] hover:bg-[#E65200] text-white px-8 py-4 text-sm font-semibold uppercase tracking-widest transition-all duration-300 border-glow-orange"
                     >
-                        Let's begin
+                        Put me on a billboard
                         <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
                     </button>
 
@@ -86,7 +85,7 @@ export const Hero = ({ onBegin }) => {
                         { k: "48h", v: "Creative turnaround" },
                         { k: "1.2M", v: "Daily impressions" },
                     ].map((s) => (
-                        <div key={s.v} className="bg-[#050B14] p-6">
+                        <div key={s.v} className="bg-[#0A1628] p-6">
                             <div className="font-display font-black text-3xl text-white tracking-tighter">{s.k}</div>
                             <div className="mt-1 text-[11px] uppercase tracking-[0.25em] text-slate-500 font-mono-tech">
                                 {s.v}
@@ -94,11 +93,6 @@ export const Hero = ({ onBegin }) => {
                         </div>
                     ))}
                 </motion.div>
-            </div>
-
-            {/* Vertical edge label */}
-            <div className="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 rotate-90 origin-center font-mono-tech text-[10px] uppercase tracking-[0.5em] text-slate-500">
-                Scroll · 01 / 06
             </div>
         </section>
     );

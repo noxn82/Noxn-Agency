@@ -42,14 +42,14 @@ export const Process = () => {
         >
             <div className="absolute inset-0 -z-10">
                 <img src={KINETIC} alt="" className="w-full h-full object-cover opacity-15" />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050B14] via-[#050B14]/85 to-[#050B14]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628] via-[#0A1628]/85 to-[#0A1628]" />
             </div>
 
             <div className="mx-auto max-w-7xl px-6 lg:px-10">
                 <motion.div {...fadeIn(0)} className="max-w-3xl mb-20">
                     <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-[#FF5A00] mb-6 flex items-center gap-3">
                         <span className="inline-block w-6 h-px bg-[#FF5A00]" />
-                        03 — How it works
+                        03 / How it works
                     </div>
                     <h2 className="font-display font-black tracking-tighter text-white text-4xl sm:text-5xl lg:text-6xl leading-[0.95]">
                         From idea<br />
@@ -63,7 +63,7 @@ export const Process = () => {
                             key={s.n}
                             {...fadeIn(0.05 * i)}
                             data-testid={NOXN.processStep(s.n)}
-                            className="bg-[#050B14] p-10 lg:p-12 hover:bg-[#0B132B] transition-colors duration-500 group"
+                            className="bg-[#0A1628] p-10 lg:p-12 hover:bg-[#142446] transition-colors duration-500 group"
                         >
                             <div className="font-display font-black text-7xl lg:text-8xl text-white/5 group-hover:text-[#FF5A00]/30 transition-colors duration-500 leading-none">
                                 {s.n}

@@ -23,7 +23,7 @@ export const Services = ({ onBegin }) => {
                 <motion.div {...fadeIn(0)} className="max-w-3xl mb-20">
                     <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-[#FF5A00] mb-6 flex items-center gap-3">
                         <span className="inline-block w-6 h-px bg-[#FF5A00]" />
-                        02 — Services
+                        02 / Services
                     </div>
                     <h2 className="font-display font-black tracking-tighter text-white text-4xl sm:text-5xl lg:text-6xl leading-[0.95]">
                         Two services.<br />
@@ -33,15 +33,15 @@ export const Services = ({ onBegin }) => {
 
                 {/* Bento grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-                    {/* CARD 1 — Ad Creation (large) */}
+                    {/* CARD 1 / Ad Creation (large) */}
                     <motion.div
                         {...fadeIn(0.05)}
                         data-testid={NOXN.serviceCardCreation}
-                        className="lg:col-span-7 lg:row-span-2 relative overflow-hidden border border-white/10 bg-[#0B132B] group hover:border-[#FF5A00]/40 transition-colors duration-500 min-h-[480px]"
+                        className="lg:col-span-7 lg:row-span-2 relative overflow-hidden border border-white/10 bg-[#142446] group hover:border-[#FF5A00]/40 transition-colors duration-500 min-h-[480px]"
                     >
                         <div className="absolute inset-0 -z-0">
                             <img src={LED_IMG} alt="LED display texture" className="w-full h-full object-cover opacity-25 group-hover:opacity-40 transition-opacity duration-700" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0B132B] via-[#0B132B]/60 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#142446] via-[#142446]/60 to-transparent" />
                         </div>
                         <div className="relative z-10 p-10 lg:p-12 h-full flex flex-col justify-between">
                             <div className="flex items-start justify-between">
@@ -54,7 +54,7 @@ export const Services = ({ onBegin }) => {
                                 </h3>
                                 <p className="mt-4 text-slate-400 text-base lg:text-lg leading-relaxed max-w-lg">
                                     Motion-first creative built for the 8-second attention window of a digital
-                                    billboard. From concept to delivery — pixel-perfect specs, every screen.
+                                    billboard. From concept to delivery: pixel-perfect specs, every screen.
                                 </p>
                                 <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-slate-300 max-w-md">
                                     {["Concept & storyboarding", "Motion design", "Copy & brand voice", "Multi-aspect masters"].map((i) => (
@@ -74,15 +74,15 @@ export const Services = ({ onBegin }) => {
                         </div>
                     </motion.div>
 
-                    {/* CARD 2 — Ad Space */}
+                    {/* CARD 2 / Ad Space */}
                     <motion.div
                         {...fadeIn(0.15)}
                         data-testid={NOXN.serviceCardSpace}
-                        className="lg:col-span-5 relative overflow-hidden border border-white/10 bg-[#0B132B] group hover:border-[#FF5A00]/40 transition-colors duration-500 min-h-[300px]"
+                        className="lg:col-span-5 relative overflow-hidden border border-white/10 bg-[#142446] group hover:border-[#FF5A00]/40 transition-colors duration-500 min-h-[300px]"
                     >
                         <div className="absolute inset-0 -z-0">
                             <img src={CITY_IMG} alt="City billboards" className="w-full h-full object-cover opacity-40 group-hover:opacity-55 transition-opacity duration-700" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0B132B] via-[#0B132B]/70 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#142446] via-[#142446]/70 to-transparent" />
                         </div>
                         <div className="relative z-10 p-10 lg:p-12 h-full flex flex-col justify-between">
                             <div className="flex items-start justify-between">
@@ -101,29 +101,35 @@ export const Services = ({ onBegin }) => {
                         </div>
                     </motion.div>
 
-                    {/* CARD 3 — Small stats */}
+                    {/* CARD 3 / Credibility panel (replaces previous coverage + quote tiles) */}
                     <motion.div
                         {...fadeIn(0.25)}
-                        className="lg:col-span-3 border border-white/10 bg-[#0B132B] p-8 min-h-[180px]"
+                        data-testid="service-card-coordination"
+                        className="lg:col-span-5 relative overflow-hidden border border-white/10 bg-[#142446] group hover:border-[#FF5A00]/40 transition-colors duration-500 min-h-[220px] grid grid-cols-1 sm:grid-cols-5"
                     >
-                        <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-slate-500 mb-4">
-                            / Coverage
+                        <div className="relative sm:col-span-2 min-h-[200px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
+                                alt="Campaign coordinator reviewing a digital billboard plan"
+                                className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                                loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#142446]/30 to-[#142446] sm:bg-gradient-to-r sm:from-transparent sm:to-[#142446]" />
                         </div>
-                        <div className="font-display font-black tracking-tighter text-5xl text-[#FF5A00] text-glow-orange">
-                            14
+                        <div className="sm:col-span-3 p-8 lg:p-10 flex flex-col justify-between">
+                            <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-slate-400 mb-3">
+                                / End-to-end coordination
+                            </div>
+                            <div>
+                                <h3 className="font-display font-black tracking-tighter text-2xl lg:text-3xl text-white leading-tight">
+                                    End-to-end campaign coordination
+                                </h3>
+                                <p className="mt-3 text-sm text-slate-300 leading-relaxed max-w-md">
+                                    Site sourcing, booking, artwork coordination, and scheduling, managed through
+                                    one process.
+                                </p>
+                            </div>
                         </div>
-                        <div className="mt-2 text-slate-400 text-sm">Cities live. 6 more in queue.</div>
-                    </motion.div>
-
-                    {/* CARD 4 — Quote */}
-                    <motion.div
-                        {...fadeIn(0.3)}
-                        className="lg:col-span-2 border border-white/10 bg-[#050B14] p-8 min-h-[180px] flex flex-col justify-between"
-                    >
-                        <span className="font-display text-5xl text-[#FF5A00] leading-none">"</span>
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                            Sold out our launch in 9 days. Half the city saw it.
-                        </p>
                     </motion.div>
                 </div>
             </div>

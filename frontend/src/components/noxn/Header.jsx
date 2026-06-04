@@ -59,7 +59,7 @@ export const Header = ({ onBegin }) => {
                         data-testid={NOXN.headerCta}
                         className="hidden md:inline-flex items-center gap-2 bg-[#FF5A00] hover:bg-[#E65200] text-white px-5 py-2.5 text-sm font-semibold transition-colors uppercase tracking-wider"
                     >
-                        Let's begin
+                        Put me on a billboard
                         <span aria-hidden>→</span>
                     </button>
 
@@ -95,7 +95,7 @@ export const Header = ({ onBegin }) => {
                             className="mt-2 bg-[#FF5A00] hover:bg-[#E65200] text-white px-5 py-3 text-sm font-semibold uppercase tracking-wider"
                             data-testid="mobile-cta-begin"
                         >
-                            Let's begin
+                            Put me on a billboard
                         </button>
                     </div>
                 </div>

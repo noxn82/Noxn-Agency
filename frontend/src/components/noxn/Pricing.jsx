@@ -70,7 +70,7 @@ export const Pricing = ({ onBegin }) => {
                 <motion.div {...fadeIn(0)} className="max-w-3xl mb-20">
                     <div className="font-mono-tech text-[11px] uppercase tracking-[0.35em] text-[#FF5A00] mb-6 flex items-center gap-3">
                         <span className="inline-block w-6 h-px bg-[#FF5A00]" />
-                        04 — Packages
+                        04 / Packages
                     </div>
                     <h2 className="font-display font-black tracking-tighter text-white text-4xl sm:text-5xl lg:text-6xl leading-[0.95]">
                         Pricing built<br />
@@ -89,8 +89,8 @@ export const Pricing = ({ onBegin }) => {
                             data-testid={NOXN.pricingCard(t.slug)}
                             className={`relative p-10 transition-all duration-500 hover:-translate-y-1 ${
                                 t.recommended
-                                    ? "bg-[#0B132B] border border-[#FF5A00]/60 border-glow-orange"
-                                    : "bg-[#0B132B] border border-white/10 hover:border-white/30"
+                                    ? "bg-[#142446] border border-[#FF5A00]/60 border-glow-orange"
+                                    : "bg-[#142446] border border-white/10 hover:border-white/30"
                             }`}
                         >
                             {t.recommended && (

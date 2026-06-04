@@ -153,7 +153,7 @@ export const AssessmentForm = ({ open, onOpenChange }) => {
         <Dialog open={open} onOpenChange={onOpenChange}>
             <DialogContent
                 data-testid={NOXN.formModal}
-                className="max-w-2xl w-[95vw] bg-[#050B14] border border-white/10 p-0 gap-0 rounded-none [&>button]:hidden"
+                className="max-w-2xl w-[95vw] bg-[#0A1628] border border-white/10 p-0 gap-0 rounded-none [&>button]:hidden"
             >
                 <DialogTitle className="sr-only">NOXN Campaign Assessment</DialogTitle>
                 <DialogDescription className="sr-only">
@@ -276,7 +276,7 @@ export const AssessmentForm = ({ open, onOpenChange }) => {
                                     {step === 2 && (
                                         <Step
                                             title="Budget & timing"
-                                            subtitle="Ballpark is fine — we'll refine together."
+                                            subtitle="Ballpark is fine, we'll refine together."
                                         >
                                             <div className="space-y-6">
                                                 <div>
@@ -324,14 +324,14 @@ export const AssessmentForm = ({ open, onOpenChange }) => {
                                     {step === 3 && (
                                         <Step
                                             title="Where do you want to be seen?"
-                                            subtitle="Cities, neighborhoods, highways — whatever's relevant."
+                                            subtitle="Cities, neighborhoods, highways, whatever's relevant."
                                         >
                                             <textarea
                                                 {...register("target_locations")}
                                                 data-testid={NOXN.formField("target_locations")}
                                                 placeholder="e.g. Brooklyn (Williamsburg + DUMBO), Austin downtown, anywhere near LAX"
                                                 rows={5}
-                                                className="w-full bg-[#0B132B] border border-white/10 text-white p-4 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
+                                                className="w-full bg-[#142446] border border-white/10 text-white p-4 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
                                             />
                                             <FieldError msg={errors.target_locations?.message} />
                                         </Step>
@@ -375,7 +375,7 @@ export const AssessmentForm = ({ open, onOpenChange }) => {
                                                     data-testid={NOXN.formField("notes")}
                                                     rows={3}
                                                     placeholder="Creative references, deadlines, dream screens..."
-                                                    className="mt-2 w-full bg-[#0B132B] border border-white/10 text-white p-4 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
+                                                    className="mt-2 w-full bg-[#142446] border border-white/10 text-white p-4 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
                                                 />
                                             </div>
                                         </Step>
@@ -473,7 +473,7 @@ const FormInput = ({ label, type = "text", register, error, testId }) => (
             type={type}
             {...register}
             data-testid={testId}
-            className="mt-2 w-full bg-[#0B132B] border border-white/10 text-white px-4 py-3 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
+            className="mt-2 w-full bg-[#142446] border border-white/10 text-white px-4 py-3 text-sm placeholder:text-slate-500 focus:border-[#FF5A00] transition-colors"
         />
         <FieldError msg={error} />
     </div>
