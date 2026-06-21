@@ -53,8 +53,9 @@ export const Services = ({ onBegin }) => {
                                     Ad creation
                                 </h3>
                                 <p className="mt-4 text-slate-400 text-base lg:text-lg leading-relaxed max-w-lg">
-                                    Motion-first creative built for the 8-second attention window of a digital
-                                    billboard. From concept to delivery: pixel-perfect specs, every screen.
+                                    Attention-grabbing billboard creative built to make every second count.
+                                    We handle everything from concept to delivery, ensuring flawless execution
+                                    across every digital display.
                                 </p>
                                 <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-slate-300 max-w-md">
                                     {["Concept & storyboarding", "Motion design", "Copy & brand voice", "Multi-aspect masters"].map((i) => (
@@ -94,8 +95,8 @@ export const Services = ({ onBegin }) => {
                                     Ad space
                                 </h3>
                                 <p className="mt-4 text-slate-400 text-base leading-relaxed max-w-md">
-                                    Premium digital billboard inventory across high-foot-traffic corridors.
-                                    Book by daypart, by zone, or by the entire skyline.
+                                    Premium digital billboard placements in high-traffic locations.
+                                    Target specific times, zones, or dominate the market with full-network coverage.
                                 </p>
                             </div>
                         </div>

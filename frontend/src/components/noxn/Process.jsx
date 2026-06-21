@@ -7,7 +7,7 @@ const steps = [
     {
         n: "01",
         title: "Brief",
-        body: "Tell us the goal, the launch window, the budget. Five minutes through the assessment form.",
+        body: "Tell us your campaign goals, preferred launch date, and upload any reference materials to get started.",
     },
     {
         n: "02",
