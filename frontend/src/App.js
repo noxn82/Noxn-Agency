@@ -11,6 +11,7 @@ import { Pricing } from "@/components/noxn/Pricing";
 import { Faq } from "@/components/noxn/Faq";
 import { Footer } from "@/components/noxn/Footer";
 import { AssessmentForm } from "@/components/noxn/AssessmentForm";
+import { MobileCtaFloater } from "@/components/noxn/MobileCtaFloater";
 
 const Landing = () => {
     const [open, setOpen] = useState(false);
@@ -28,6 +29,7 @@ const Landing = () => {
             </main>
             <Footer onBegin={onBegin} />
             <AssessmentForm open={open} onOpenChange={setOpen} />
+            <MobileCtaFloater onBegin={onBegin} hidden={open} />
             <Toaster
                 theme="dark"
                 position="bottom-right"
