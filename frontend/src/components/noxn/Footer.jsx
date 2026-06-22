@@ -35,7 +35,7 @@ export const Footer = ({ onBegin }) => {
                     <div className="lg:col-span-5 grid grid-cols-2 gap-8">
                         <div>
                             <div className="font-mono-tech text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-4">
-                                / Studio
+                                / Sitemap
                             </div>
                             <ul className="space-y-2 text-sm text-slate-300">
                                 <li><a href="#services" className="hover:text-[#FF5A00] transition-colors">Services</a></li>
@@ -49,9 +49,18 @@ export const Footer = ({ onBegin }) => {
                                 / Contact
                             </div>
                             <ul className="space-y-2 text-sm text-slate-300">
-                                <li><a href="mailto:hello@noxn.studio" className="hover:text-[#FF5A00] transition-colors">hello@noxn.studio</a></li>
-                                <li>+1 (415) 555-0117</li>
-                                <li>Brooklyn · Austin · LA</li>
+                                <li>
+                                    <a href="mailto:noxn@noxn.com.au" className="hover:text-[#FF5A00] transition-colors" data-testid="footer-email">
+                                        noxn@noxn.com.au
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+61415100275" className="hover:text-[#FF5A00] transition-colors" data-testid="footer-phone">
+                                        0415 100 275
+                                    </a>
+                                </li>
+                                <li data-testid="footer-location">Brisbane, Queensland</li>
+                                <li data-testid="footer-address">39 Boundary St, South Brisbane QLD 4101</li>
                             </ul>
                         </div>
                     </div>
@@ -66,7 +75,7 @@ export const Footer = ({ onBegin }) => {
 
                 <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="font-mono-tech text-[11px] uppercase tracking-[0.3em] text-slate-500">
-                        © {new Date().getFullYear()} NOXN Studio · Out-of-home, redefined
+                        © {new Date().getFullYear()} NOXN · Out-of-home, redefined
                     </div>
                     <div className="font-mono-tech text-[11px] uppercase tracking-[0.3em] text-slate-500 flex items-center gap-2">
                         <span className="inline-block w-1.5 h-1.5 bg-[#FF5A00] animate-glow-pulse" />
